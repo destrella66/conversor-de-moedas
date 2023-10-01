@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Min Jquery Dependencies -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./scr/css/style.css" />
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scr/script/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h1>Conversor de Moedas</h1>
+          <p>Digite a quantia</p>
+          <input type="number" id="amount" placeholder="1234" />
+          <p>Converter para</p>
+        </div>
+        <ul class="buttons">
+          <li>
+            <a href="#" onclick="changeCurrency('USD')"> Dollar</a>
+          </li>
+
+          <li>
+            <a href="#" onclick="changeCurrency('EUR')">Euro</a>
+          </li>
+
+          <li>
+            <a href="#" onclick="changeCurrency('')">Libra</a>
+          </li>
+
+          <li>
+            <a href="#" onclick="changeCurrency('BTC')">BTC</a>
+          </li>
+        </ul>
+        <div class="buttons">
+          <a href="" class="btn" id="convert" onclick="convertCurrency()"
+            >Converter</a
+          >
+          <a href="" class="btn" id="clear">Limpar</a>
+        </div>
+        <div class="result">
+          <p>
+            `${quantia} para ${moeda} são <br />${nova_quantia} de ${moeda}`
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
